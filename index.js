@@ -7,7 +7,7 @@ errorMessage.textContent = 'Incorrect password. Please try again.';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const password = passwordInput.value;
-  if (password === 'DCS_Uneducator') {
+  if (password === '123') {
     localStorage.setItem('authenticated', true);
     window.location.href = 'home.html';
   } else {
