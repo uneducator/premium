@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
   const password = passwordInput.value;
   if (password === '123') {
     localStorage.setItem('authenticated', true);
-    window.location.href = 'home.html';
+    window.location.href = 'homepage/home.html';
   } else {
     form.appendChild(errorMessage);
   }
