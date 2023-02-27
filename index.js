@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
   const password = passwordInput.value;
   if (password === 'DCS_Uneducator') {
     localStorage.setItem('authenticated', true);
-    window.location.href = '/home.html';
+    window.location.href = 'home.html';
   } else {
     form.appendChild(errorMessage);
   }
