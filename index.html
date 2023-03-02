@@ -16,31 +16,11 @@
                         <label for="password">Access Code</label>
                     </div>
                     <button type="submit" id="submit-button" name="password">Log In</button>
-                    <div class="register">
-                        <p>Don't have premium? <a href="#">Get it here!</a></p>
-                    </div>
-                    <div class="register">
-                        <p>Teacher?<a onclick="banUser()"> Click here!</a></p>
-                    </div>
                 </form>
             </div>
         </div>
     </section>
     <script src="index.js"></script>
-    <script>
-        function banUser() {
-          // Set ban duration to 5 minutes (300000 milliseconds)
-          const banDuration = 300000;
-          // Get current time in milliseconds
-          const currentTime = new Date().getTime();
-          // Calculate ban expiration time
-          const banExpirationTime = currentTime + banDuration;
-          // Store ban expiration time in local storage
-          localStorage.setItem("banExpirationTime", banExpirationTime);
-          // Redirect user to a page that displays ban message
-          window.location.href = "blacklist.html";
-        }
-        </script>
 </body>
 </html>
 
