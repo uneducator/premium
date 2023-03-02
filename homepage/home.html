@@ -111,10 +111,18 @@
 
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
     h2,
     p {
-      display: block;
       width: 100%;
+      text-align: center;
     }
   </style>
 </head>
@@ -122,8 +130,10 @@
 <body>
   <section>
     <div class="section_box">
+      <div class="container">
       <h2>Homepage</h2>
       <p>Welcome to the uneducator homepage</p>
+      </div>
     </div>
   </section>
 </body>
