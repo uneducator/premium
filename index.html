@@ -17,8 +17,7 @@
             align-items: center;
             min-height: 100vh;
             width: 100%;
-
-            background: url('background6.jpg')no-repeat;
+            background: url('background6.jpg') no-repeat;
             background-position: center;
             background-size: cover;
         }
@@ -32,9 +31,9 @@
             border-radius: 20px;
             backdrop-filter: blur(15px);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-
         }
 
         h2 {
@@ -83,6 +82,7 @@
             cursor: pointer;
             font-size: 1em;
             font-weight: 600;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -99,11 +99,12 @@
         </div>
     </section>
     <script>
-        const banButton = document.getElementById('ban-button');
+        const banButton = document.getElementById('ban-btn');
 
         banButton.addEventListener('click', function () {
             localStorage.setItem('banned', 'true');
             window.location.href = 'ban.html';
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
         });
     </script>
 </body>
