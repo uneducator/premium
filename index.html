@@ -91,21 +91,28 @@
     <section>
         <div class="section">
             <div class="form-box">
-                <button>
-                    <p href="home.html">homepage</p>
-                </button>
+                <button id="2dre">homepage</button>
                 <button id="ban-btn">Teacher? Click 'ere!</button>
             </div>
         </div>
     </section>
     <script>
         const banButton = document.getElementById('ban-btn');
+        const dre = document.getElementById('2dre');
 
         banButton.addEventListener('click', function () {
             localStorage.setItem('banned', 'true');
             window.location.href = 'ban.html';
         });
+
+        dre.addEventListener('click', function () {
+            window.location.href = 'home.html';
+        });
+
+
     </script>
+    <script src="auth.js"></script>
+    <script src="ipban.js"></script>
 </body>
 
 </html>
