@@ -162,12 +162,33 @@
             align-items: flex-start;
             height: 100vh;
         }
+
+        .circular_button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .circular_button:before {
+            content: "\2190";
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
 <body>
     <section>
         <div class="section_box">
+            <a href="/premium/home.html" class="circular_button"></a>
             <div class="container">
                 <h2>Games</h2>
                 <a style="margin-bottom: 30px;">Simply click on a game and you will be redirected.</a>
