@@ -1,4 +1,4 @@
-const authenticated = localStorage.getItem('authenticated');
-if (!authenticated) {
-  window.location.href = '/premium/';
+const authenticated = localStorage.getItem('banned');
+if (authenticated) {
+  window.location.href = '/premium/ban.html';
 }
